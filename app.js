@@ -21,9 +21,9 @@ var async = require("async");
 client = redis.createClient();
 require('dotenv').config();
 
-let url = 'http://139.162.242.237/betfair/socket/super_admin_matches.php?type=4';
-let url2 = 'http://139.162.242.237/betfair/socket/super_admin_matches.php?type=1';
-let url3 = 'http://139.162.242.237/betfair/socket/super_admin_matches.php?type=2';
+let url = 'xxxxxxxxxxxxxxxxxxxr/socket/super_admin_matches.php?type=4';
+let url2 = 'xxxxxxxxxxxxxxxxxxx/socket/super_admin_matches.php?type=1';
+let url3 = 'xxxxxxxxxxxxxxxxxxxxx/socket/super_admin_matches.php?type=2';
 var urls = [url,url2,url3];
 
 const promises = urls.map(url1 => request(url1));
@@ -36,7 +36,7 @@ Promise.all(promises).then((data) => {
        arrdata = arrdata.concat(JSON.parse(element));
 });
 //console.log("arrdata",arrdata);
-var marketUrl = 'http://176.58.100.128/br_api/matchapi.php?Action=listMarketTypes&EventID='
+var marketUrl = 'xxxxxxxxxxxxxxxxxxxx/br_api/matchapi.php?Action=listMarketTypes&EventID='
 
 
 
